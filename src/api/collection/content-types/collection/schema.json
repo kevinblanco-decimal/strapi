@@ -4,7 +4,8 @@
   "info": {
     "singularName": "collection",
     "pluralName": "collections",
-    "displayName": "Collection"
+    "displayName": "Collection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -43,6 +44,13 @@
       "relation": "oneToMany",
       "target": "api::condition-report.condition-report",
       "mappedBy": "collection"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
